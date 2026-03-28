@@ -16,10 +16,29 @@
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
-            <li id="contact">Contact</li>
+            <li>Contact</li>
+            <li id="menu" onclick="showMenu()">Menu</li>
         </ul>
     </nav>
 
+    <ul id="nav2">
+        <li onclick="alertt()">Login</li>
+        <li onclick="alertt()">Register</li>
+    </ul>
+
+    <script>
+        
+        function showMenu(){
+
+            const sidebar = document.getElementById('nav2');
+            sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block' ;
+
+        };
+
+        function alertt(){
+            alert('functionalities are disabled')
+        }
+    </script>
 
 </body>
 </html>
